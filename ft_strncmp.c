@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:46:34 by sma               #+#    #+#             */
-/*   Updated: 2020/12/28 23:46:49 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:52:53 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(char *dest, char *src, int n)
+int	ft_strncmp(char *dest, char *src, int n)
 {
 	int	i;
 

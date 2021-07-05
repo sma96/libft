@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/08 16:05:38 by sma               #+#    #+#             */
-/*   Updated: 2021/01/11 02:07:01 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:21:43 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int		i;
 	t_list	*ptr;

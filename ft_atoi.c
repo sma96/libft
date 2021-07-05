@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:20:50 by sma               #+#    #+#             */
-/*   Updated: 2021/01/07 19:01:12 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:20:32 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_isspace(const char *c)
+int	ft_isspace(const char *c)
 {
 	int				i;
 
@@ -23,7 +23,7 @@ int					ft_isspace(const char *c)
 	return (i);
 }
 
-int					ft_atoi(const char *c)
+int	ft_atoi(const char *c)
 {
 	int				i;
 	long long		num;

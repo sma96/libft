@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:45:12 by sma               #+#    #+#             */
-/*   Updated: 2021/01/01 03:47:53 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:23:54 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int		ft_strlcpy(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	j;

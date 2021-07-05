@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/30 15:16:00 by sma               #+#    #+#             */
-/*   Updated: 2021/01/21 16:48:23 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:52:10 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		**ft_free(char **ss, int len)
+char	**ft_free(char **ss, int len)
 {
 	int		i;
 
@@ -26,14 +26,15 @@ char		**ft_free(char **ss, int len)
 	return (NULL);
 }
 
-int			ft_strcpy2(char **ss, char *str, char c, int idx)
+int	ft_strcpy2(char **ss, char *str, char c, int idx)
 {
 	int		i;
 
 	i = 0;
 	while (str[i] != c && str[i] != '\0')
 		i++;
-	if (!(ss[idx] = (char*)malloc(sizeof(char) * (i + 1))))
+	ss[idx] = (char *)malloc(sizeof(char) * (i + 1));
+	if (!(ss))
 		return (0);
 	i = 0;
 	while (*str != c && *str != '\0')
@@ -46,7 +47,7 @@ int			ft_strcpy2(char **ss, char *str, char c, int idx)
 	return (1);
 }
 
-int			ft_count(char *str, char c)
+int	ft_count(char *str, char c)
 {
 	int		i;
 	int		count;
@@ -73,7 +74,7 @@ int			ft_count(char *str, char c)
 	return (count);
 }
 
-char		**ft_split(char *str, char c)
+char	**ft_split(char *str, char c)
 {
 	int		i;
 	int		count;
@@ -83,7 +84,8 @@ char		**ft_split(char *str, char c)
 		return (NULL);
 	i = 0;
 	count = ft_count(str, c);
-	if (!(ss = (char**)malloc(sizeof(char*) * (count + 1))))
+	ss = (char **)malloc(sizeof(char *) * (count + 1));
+	if (!(ss))
 		return (NULL);
 	ss[count] = NULL;
 	while (i < count)

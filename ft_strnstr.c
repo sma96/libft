@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:47:06 by sma               #+#    #+#             */
-/*   Updated: 2021/01/22 02:12:11 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:54:46 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_strnstr2(const char *str2, const char *find, size_t i, size_t j)
+char	*ft_strnstr2(const char *str2, const char *find, size_t i, size_t j)
 {
 	size_t	s;
 	size_t	f;
@@ -29,7 +29,7 @@ char		*ft_strnstr2(const char *str2, const char *find, size_t i, size_t j)
 			{
 				count++;
 				if (count == j)
-					return ((char*)&str2[s]);
+					return ((char *)&str2[s]);
 			}
 			f++;
 		}
@@ -38,7 +38,7 @@ char		*ft_strnstr2(const char *str2, const char *find, size_t i, size_t j)
 	return (0);
 }
 
-char		*ft_strnstr(const char *str, const char *to_find, size_t size)
+char	*ft_strnstr(const char *str, const char *to_find, size_t size)
 {
 	size_t	i;
 	size_t	j;
@@ -46,8 +46,8 @@ char		*ft_strnstr(const char *str, const char *to_find, size_t size)
 	i = 0;
 	j = 0;
 	if (!*to_find)
-		return ((char*)str);
+		return ((char *)str);
 	while (to_find[j] != '\0')
 		j++;
-	return ((char*)ft_strnstr2(str, to_find, size, j));
+	return ((char *)ft_strnstr2(str, to_find, size, j));
 }

@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/01 15:40:05 by sma               #+#    #+#             */
-/*   Updated: 2021/01/09 23:54:38 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:54:20 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strlen3(char *c)
+int	ft_strlen3(char *c)
 {
 	int		i;
 
@@ -22,7 +22,7 @@ int			ft_strlen3(char *c)
 	return (i);
 }
 
-void		ft_strcpy3(char *js, char const *s1, char const *s2)
+void	ft_strcpy3(char *js, char const *s1, char const *s2)
 {
 	while (*s1)
 		*js++ = *s1++;
@@ -30,7 +30,7 @@ void		ft_strcpy3(char *js, char const *s1, char const *s2)
 		*js++ = *s2++;
 }
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*js;
 	int		s1len;
@@ -40,9 +40,10 @@ char		*ft_strjoin(char const *s1, char const *s2)
 		return ((char *)s1);
 	if (!s2)
 		return ((char *)s2);
-	s1len = ft_strlen3((char*)s1);
-	s2len = ft_strlen3((char*)s2);
-	if (!(js = (char*)malloc(sizeof(char) * (s1len + s2len + 1))))
+	s1len = ft_strlen3((char *)s1);
+	s2len = ft_strlen3((char *)s2);
+	js = (char *)malloc(sizeof(char) * (s1len + s2len + 1));
+	if (!(js))
 		return (NULL);
 	js[s1len + s2len] = '\0';
 	ft_strcpy3(js, s1, s2);

@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 02:28:40 by sma               #+#    #+#             */
-/*   Updated: 2021/01/11 03:02:21 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:21:28 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*ptr;
 

@@ -6,13 +6,13 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/29 17:31:13 by sma               #+#    #+#             */
-/*   Updated: 2021/01/01 01:37:10 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:21:13 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			*ft_transf(long long n, char *str, int len)
+char	*ft_transf(long long n, char *str, int len)
 {
 	if (n < 0)
 	{
@@ -37,7 +37,7 @@ char			*ft_transf(long long n, char *str, int len)
 	return (str);
 }
 
-int				ft_strlen2(long long n)
+int	ft_strlen2(long long n)
 {
 	int			len;
 	long long	a;
@@ -57,7 +57,7 @@ int				ft_strlen2(long long n)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int			len;
 	char		*str;

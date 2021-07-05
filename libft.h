@@ -6,7 +6,7 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:50:55 by sma               #+#    #+#             */
-/*   Updated: 2021/01/22 20:08:15 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:58:25 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}				t_list;
 /*
 ** part 1
 */
@@ -33,7 +33,7 @@ int					ft_isascii(int c);
 int					ft_isalnum(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
-void				*ft_memccpy(void *dest, const void *src,\
+void				*ft_memccpy(void *dest, const void *src, \
 									int c, size_t size);
 void				*ft_memcpy(void *dest, const void *src, size_t size);
 void				*ft_memmove(void *dest, const void *src, size_t size);
@@ -46,7 +46,7 @@ int					ft_strlen(char *a);
 char				*ft_strdup(const char *src);
 int					ft_strncmp(char *dest, char *src, int n);
 int					ft_strlen(char *c);
-char				*ft_strnstr(const char *str, const char *to_find,\
+char				*ft_strnstr(const char *str, const char *to_find, \
 								size_t size);
 char				*ft_strrchr(const char *str, int c);
 char				*ft_strchr(const char *str, int c);

@@ -6,18 +6,18 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 20:43:23 by sma               #+#    #+#             */
-/*   Updated: 2021/01/17 20:59:04 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:58:36 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void				ft_bzero(void *s, size_t size)
+void	ft_bzero(void *s, size_t size)
 {
 	unsigned char	*temp;
 	size_t			i;
 
-	temp = (unsigned char*)s;
+	temp = (unsigned char *)s;
 	i = 0;
 	while (i < size)
 		temp[i++] = 0;

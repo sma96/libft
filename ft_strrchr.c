@@ -6,7 +6,7 @@
 /*   By: sma <sma@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 23:49:02 by sma               #+#    #+#             */
-/*   Updated: 2021/01/02 17:34:36 by sma              ###   ########.fr       */
+/*   Updated: 2021/07/05 15:53:05 by sma              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *str, int c)
 	while (i >= 0)
 	{
 		if (str[i] == (char)c)
-			return ((char*)&str[i]);
+			return ((char *)&str[i]);
 		i--;
 	}
 	return (0);
